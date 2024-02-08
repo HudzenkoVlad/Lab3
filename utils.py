@@ -1,3 +1,4 @@
+
 def Fact(n):
     if n == 1 or n == 0:
         return 1
@@ -22,4 +23,16 @@ def prost(n):
             return "не просте"
         i = i + 1
     return "просте"
+
+def nsd(a,b):
+    if a < b:
+        s = b
+        b = a
+        a = s
+    elif a == b:
+        return a
+    if a % b == 0:
+        return b
+    else:
+        return nsd(b, a % b)
 
