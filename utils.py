@@ -62,3 +62,8 @@ def Rozklad(v):
         else:
             p = p + '(' + str(i) + ' ^ ' + str(d[i]) + ')' + '  *  '
     return str(w)+ ' = '+ p
+
+def C(n,k):
+    return Fact(n)/(Fact(k) * Fact(n - k))
+for i in range(n + 1):
+    lst.append(int(C(n, i)))
